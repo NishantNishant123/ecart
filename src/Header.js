@@ -29,10 +29,7 @@ const Header = () => {
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">E-CART</a>
-        <button class="navbar-toggler">
-
-          <NavLink to="/order" exact class="navlink">OrderPage</NavLink>
-          </button>
+        
         <button class="navbar-toggler" type="button" >
 
           <CartCount />
@@ -65,7 +62,9 @@ const Header = () => {
             <li class="nav-item" id="cart_count">
               <CartCount />
             </li>
-
+            <li class="nav-item" >
+            <NavLink to="/order" exact class="navlink">OrderPage</NavLink>
+            </li>
           </ul>
         </div>
       </div>
